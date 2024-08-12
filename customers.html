@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Customer</title>
+    <style>
+        form {
+            width: 300px;
+            margin: 0 auto;
+        }
+        label, input {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body bgcolor="pink">
+    <h1>Add Customer</h1>
+    <form action="customers.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" required>
+        
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+        
+        <input type="submit" value="Add Customer">
+    </form>
+</body>
+</html>
